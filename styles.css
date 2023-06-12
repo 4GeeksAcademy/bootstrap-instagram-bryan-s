@@ -5,3 +5,16 @@
 .btn-icon:focus {
     color: blue;
  }
+
+ .likes {
+   font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+ }
+
+ h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 4px;
+      margin-bottom: 8px;
+ }

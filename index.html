@@ -35,16 +35,26 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <form>
                       <div class="form-group">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
+                        <label for="message-text" class="col-form-label">Caption:</label>
+                        <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                        <button class="btn btn-light my-2">
+                          <i class="fas fa-camera"></i>
+                        </button>
+                        <button type="button" class="btn btn-light my-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        </button>
                       </div>
                     </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                   </div>
                 </div>
               </div>
@@ -55,11 +65,11 @@
                 <i class="fas fa-cog"></i>
               </button>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
                 <li class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Log out</a></li>
+                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
               </ul>
             </div>
             
@@ -67,89 +77,255 @@
         </div>
       </nav>
     </header>
-    
-
-
     <!-- Body of the page with 2 icons -->
     <div class="container mt-5">
       <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-list-tab" data-bs-toggle="pill" data-bs-target="#pills-list" type="button" role="tab" aria-controls="pills-list" aria-selected="false">
-            <i class="fas fa-th fa-2x"></i>
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-grid-tab" data-bs-toggle="pill" data-bs-target="#pills-grid" type="button" role="tab" aria-controls="pills-grid" aria-selected="true">
-            <i class="fas fa-border-all fa-2x"></i>
-          </button>
-        </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-grid-tab" data-bs-toggle="pill" data-bs-target="#pills-grid" type="button" role="tab" aria-controls="pills-grid" aria-selected="true">
+                  <i class="fas fa-th fa-2x"></i>
+              </button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-list-tab" data-bs-toggle="pill" data-bs-target="#pills-list" type="button" role="tab" aria-controls="pills-list" aria-selected="false">
+                  <i class="fas fa-border-all fa-2x"></i>
+              </button>
+          </li>
       </ul>
-      
-      <div class="container mt-5">
-        <div class="card mx-auto" style="max-width: 500px;">
-          <div class="card-header">
-            <h3>Instagram Post</h3>
+    
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
+          <div class="container mt-5">
+              <div class="card mx-auto" style="max-width: 500px;">
+                  <div class="card-header">
+                      <h3>Sleepy Pup!</h3>
+                  </div>
+                  <div class="card-img-top img-fluid d-flex align-items-center" style="background-image: url('https://images.pexels.com/photos/3104709/pexels-photo-3104709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+                  </div>
+                  <div class="card-body">
+                      <p class="likes">200 likes</p>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim mauris et libero sagittis, eu varius sapien euismod. Nulla facilisi.</p>
+                  </div>
+                  <div class="card-footer">
+                      <small class="text-muted">Posted on May 15, 2023</small>
+                  </div>
+              </div>
           </div>
-          <div class="card-img-top img-fluid d-flex align-items-center" style="background-image: url('https://images.pexels.com/photos/3104709/pexels-photo-3104709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); height: 0; padding-bottom: 100%; background-size: cover; background-position: center;">
+
+          <div class="container mt-5">
+              <div class="card mx-auto" style="max-width: 500px;">
+                  <div class="card-header">
+                      <h3>Computer Dog</h3>
+                  </div>
+                  <div class="card-img-top img-fluid d-flex align-items-center" style="background-image: url('https://images.pexels.com/photos/5122188/pexels-photo-5122188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+                  </div>
+                  <div class="card-body">
+                      <p class="likes">200 likes</p>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim mauris et libero sagittis, eu varius sapien euismod. Nulla facilisi.</p>
+                  </div>
+                  <div class="card-footer">
+                      <small class="text-muted">Posted on May 15, 2023</small>
+                  </div>
+              </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Cute Dog</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim mauris et libero sagittis, eu varius sapien euismod. Nulla facilisi.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Posted on May 15, 2023</small>
-          </div>
+
+          <div class="container mt-5">
+            <div class="card mx-auto" style="max-width: 500px;">
+                <div class="card-header">
+                    <h3>Funny Dog Face</h3>
+                </div>
+                <div class="card-img-top img-fluid d-flex align-items-center" style="background-image: url('https://images.pexels.com/photos/7210748/pexels-photo-7210748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+                </div>
+                <div class="card-body">
+                    <p class="likes">200 likes</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim mauris et libero sagittis, eu varius sapien euismod. Nulla facilisi.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Posted on May 15, 2023</small>
+                </div>
+            </div>
         </div>
+
+        <div class="container mt-5">
+          <div class="card mx-auto" style="max-width: 500px;">
+              <div class="card-header">
+                  <h3>Wild Budgie</h3>
+              </div>
+              <div class="card-img-top img-fluid d-flex align-items-center" style="background-image: url('https://images.pexels.com/photos/4168356/pexels-photo-4168356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 75%; background-size: cover; background-position: center;">
+              </div>
+              <div class="card-body">
+                  <p class="likes">200 likes</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim mauris et libero sagittis, eu varius sapien euismod. Nulla facilisi.</p>
+              </div>
+              <div class="card-footer">
+                  <small class="text-muted">Posted on May 15, 2023</small>
+              </div>
+          </div>
       </div>
 
-        <div class="tab-pane fade" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/3104709/pexels-photo-3104709.jpeg');height: 0; padding-bottom: 100%; background-size: cover; background-position: center;">
-              </div>
+      <div class="container mt-5">
+        <div class="card mx-auto" style="max-width: 500px;">
+            <div class="card-header">
+                <h3>Fluffy Bird!</h3>
             </div>
-                <div class="col-md-4 mb-4">
-                  <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/5122188/pexels-photo-5122188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');height: 0; padding-bottom: 100%; background-size: cover; background-position: center;">
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                  <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/7210748/pexels-photo-7210748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');height: 0; padding-bottom: 100%; background-size: cover; background-position: center;">
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                  <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/4168356/pexels-photo-4168356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');height: 0; padding-bottom: 100%; background-size: cover; background-position: center;">
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                  <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/7154562/pexels-photo-7154562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');height: 0; padding-bottom: 100%; background-size: cover; background-position: center;">
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                  <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/16481901/pexels-photo-16481901/free-photo-of-wood-bird-art-winter.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');height: 0; padding-bottom: 100%; background-size: cover; background-position: center;">
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                  <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/1300355/pexels-photo-1300355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');height: 0; padding-bottom: 100%; background-size: cover; background-position: center;">
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                  <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/8933253/pexels-photo-8933253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');height: 0; padding-bottom: 100%; background-size: cover; background-position: center;">
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                  <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/8935988/pexels-photo-8935988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');height: 0; padding-bottom: 100%; background-size: cover; background-position: center;">
-                  </div>
-                </div>
-              </div>
+            <div class="card-img-top img-fluid d-flex align-items-center" style="background-image: url('https://images.pexels.com/photos/7154562/pexels-photo-7154562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
             </div>
+            <div class="card-body">
+                <p class="likes">200 likes</p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim mauris et libero sagittis, eu varius sapien euismod. Nulla facilisi.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Posted on May 15, 2023</small>
+            </div>
+        </div>
+    </div>
+
+            <div class="container mt-5">
+              <div class="card mx-auto" style="max-width: 500px;">
+                  <div class="card-header">
+                      <h3>Funny Bird Playing</h3>
+                  </div>
+                  <div class="card-img-top img-fluid d-flex align-items-center" style="background-image: url('https://images.pexels.com/photos/16481901/pexels-photo-16481901/free-photo-of-wood-bird-art-winter.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+                  </div>
+                  <div class="card-body">
+                      <p class="likes">200 likes</p>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim mauris et libero sagittis, eu varius sapien euismod. Nulla facilisi.</p>
+                  </div>
+                  <div class="card-footer">
+                      <small class="text-muted">Posted on May 15, 2023</small>
+                  </div>
+              </div>
+          </div>
+
+          <div class="container mt-5">
+            <div class="card mx-auto" style="max-width: 500px;">
+                <div class="card-header">
+                    <h3>Cute Ducks</h3>
+                </div>
+                <div class="card-img-top img-fluid d-flex align-items-center" style="background-image: url('https://images.pexels.com/photos/1300355/pexels-photo-1300355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+                </div>
+                <div class="card-body">
+                    <p class="likes">200 likes</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim mauris et libero sagittis, eu varius sapien euismod. Nulla facilisi.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Posted on May 15, 2023</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+          <div class="card mx-auto" style="max-width: 500px;">
+              <div class="card-header">
+                  <h3>Ducks Swimming</h3>
+              </div>
+              <div class="card-img-top img-fluid d-flex align-items-center" style="background-image: url('https://images.pexels.com/photos/8933253/pexels-photo-8933253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+              </div>
+              <div class="card-body">
+                  <p class="likes">200 likes</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim mauris et libero sagittis, eu varius sapien euismod. Nulla facilisi.</p>
+              </div>
+              <div class="card-footer">
+                  <small class="text-muted">Posted on May 15, 2023</small>
+              </div>
+          </div>
+        </div>
+
+        <div class="container mt-5">
+          <div class="card mx-auto" style="max-width: 500px;">
+              <div class="card-header">
+                  <h3>Cat and Baby Duck</h3>
+              </div>
+              <div class="card-img-top img-fluid d-flex align-items-center" style="background-image: url('https://images.pexels.com/photos/8935988/pexels-photo-8935988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+              </div>
+              <div class="card-body">
+                  <p class="likes">200 likes</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim mauris et libero sagittis, eu varius sapien euismod. Nulla facilisi.</p>
+              </div>
+              <div class="card-footer">
+                  <small class="text-muted">Posted on May 15, 2023</small>
+              </div>
           </div>
         </div>
       </div>
     </div>
-    
-  
+      
+    <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab">
+  <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/3104709/pexels-photo-3104709.jpeg'); padding-bottom: 100%; background-size: cover; background-position: center;">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/5122188/pexels-photo-5122188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/7210748/pexels-photo-7210748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/4168356/pexels-photo-4168356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/7154562/pexels-photo-7154562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/16481901/pexels-photo-16481901/free-photo-of-wood-bird-art-winter.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');height: 0; padding-bottom: 100%; background-size: cover; background-position: center;">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/1300355/pexels-photo-1300355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/8933253/pexels-photo-8933253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="bg-image hover-overlay ripple shadow-1-strong" style="background-image: url('https://images.pexels.com/photos/8935988/pexels-photo-8935988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); padding-bottom: 100%; background-size: cover; background-position: center;">
+        </div>
+      </div>
+  </div>
+</div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  <script>
+
+window.onload = function() {
+ 
+  let dateElements = document.getElementsByClassName('text-muted');
+
+  let newDate = new Date(2023, 4, 16);
+
+  for (let i = 0; i < dateElements.length; i++) {
+  
+    let currentElement = dateElements[i];
+
+    let dateString = newDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+    currentElement.innerHTML = "Posted on " + dateString;
+
+    newDate.setDate(newDate.getDate() + 1);
+//
+
+  let likeElements = document.getElementsByClassName('likes');
+
+  for (let i = 0; i < likeElements.length; i++) {
+  
+    let currentElement = likeElements[i];
+
+    let randomNumber = Math.floor(Math.random() * (2000 - 200) + 200);
+
+    currentElement.innerHTML = randomNumber + " likes";
+    }
+  }
+}
+
+  </script>
   </body>
 </html>
